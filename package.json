@@ -1,0 +1,22 @@
+{
+  "name": "my-app",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Remax Project",
+  "main": "index.js",
+  "keywords": [],
+  "author": "cjl <thundersmile@126.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "remax build -t wechat -w --no-devtools",
+    "build": "cross-env NODE_ENV=production remax build -t wechat"
+  },
+  "dependencies": {
+    "@vant/weapp": "^1.10.0",
+    "react": "^17.0.2",
+    "remax": "^2.15.10"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2"
+  }
+}
