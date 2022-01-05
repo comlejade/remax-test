@@ -1,5 +1,5 @@
-const sass = require('@remax/plugin-sass');
+// const sass = require('@remax/plugin-sass');
 
 module.exports = {
-  plugins: [sass()],
+  // plugins: [sass()],
 };

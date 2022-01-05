@@ -12,12 +12,11 @@
     "build": "cross-env NODE_ENV=production remax build -t wechat"
   },
   "dependencies": {
-    "@remax/plugin-sass": "^1.0.1",
     "@vant/area-data": "^1.2.1",
     "@vant/weapp": "^1.10.0",
     "dayjs": "^1.10.7",
     "react": "^17.0.2",
-    "remax": "^2.15.10"
+    "remax": "^2.15.11"
   },
   "devDependencies": {
     "cross-env": "^7.0.2",
