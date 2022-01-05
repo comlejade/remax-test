@@ -1,14 +1,14 @@
 import React from 'react';
-import { View, Navigator } from 'remax/wechat';
+import { View } from 'remax/wechat';
 import VanButton from '@vant/weapp/lib/button';
 import styles from './index.scss'
 export default () => {
   const handleClick = () => {
-    console.log('1111')
+    console.log('2222')
   }
   return (
     <View>
-      <VanButton type="primary" bindclick={handleClick}>点我</VanButton>
+      <VanButton customClass={styles.btn} type="info" size="small" catchclick={handleClick} catchtap={'noop'}>点我</VanButton>
     </View>
-  );
-};
+  )
+}

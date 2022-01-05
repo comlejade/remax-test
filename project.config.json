@@ -28,7 +28,7 @@
       "outputPath": ""
     },
     "useIsolateContext": false,
-    "userConfirmedUseIsolateContext": false,
+    "userConfirmedUseIsolateContext": true,
     "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
@@ -44,6 +44,6 @@
   "simulatorPluginLibVersion": {},
   "appid": "wx9d98868101134b26",
   "projectname": "my-app",
-  "libVersion": "2.21.1",
+  "libVersion": "2.21.2",
   "condition": {}
 }
