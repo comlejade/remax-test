@@ -5,26 +5,23 @@ import VanField from '@vant/weapp/lib/field';
 import VanCellGroup from '@vant/weapp/lib/cell-group';
 import styles from './index.css'
 export default () => {
-  const [value, setValue] = useState('')
-  const [value2, setValue2] = useState('')
-  const [value3, setValue3] = useState('')
-
-  const handleChange = (e) => {
-    setValue(e.detail)
-  }
+  const [idCard, setIdCard] = useState('')
 
   const handleClick = () => {
     console.log('2222')
   }
-  
+
+  const handleChange = (e) => {
+    console.log(e.detail)
+    setIdCard(e.detail)
+  }
+
   return (
     <View>
       <VanCellGroup>
-        <VanField label="用药人" placeholder="请输入用药人真实姓名" type="text" label="联系人" value={value} bindchange={(e) => setValue(e.detail)} />
-        <VanField label="联系人" type="digit" value={value2} bindchange={(e) => setValue2(e.detail)} />
-        <VanField label="联系人" readonly value={value3} bind:click-input={() => {console.log('input clicked')}} />
+        <VanField label={"身份证号"} placeholder={"用药人身份证号"} type={"idcard"} maxlength={18} value={idCard} bindchange={handleChange} />
       </VanCellGroup>
-      <VanButton className={styles.btn} type="info" size="small" bindclick={handleClick} bindtap={'noop'}>点我</VanButton>
+      <VanButton className={styles.btn} type="info" size="small" bindclick={handleClick}>点我</VanButton>
     </View>
   )
 }
